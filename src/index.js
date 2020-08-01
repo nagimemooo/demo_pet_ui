@@ -6,6 +6,7 @@ import "./styles.css";
 import Banner from "./Components/Banner";
 import Header from "./Components/Header";
 import Content from "./Components/Content";
+import Adopt from "./Components/Adopt";
 const rootElement = document.getElementById("root");
 
 //js函式宣告或是變數宣告區
@@ -40,6 +41,7 @@ ReactDOM.render(
       <Header />
       <Banner /> {/*註解...*/}
       <Content/>
+<Adopt/>
       <h1 className="title"> Hello, world! </h1>
       <div> {pic()}</div>
       {/* <button value onClick={getValue}>按下以取得數值 </button>
