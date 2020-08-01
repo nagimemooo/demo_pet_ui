@@ -2,7 +2,7 @@ import "./Content.css";
 import React, { useState, useEffect } from "react";
 import Item from "./ContentItem.js";
 export default function Content(props) {
-  const [items, setChildren] = useState("");
+  const [items, setItems] = useState("");
   useEffect(() => {
     const c = [];
 
@@ -10,7 +10,7 @@ export default function Content(props) {
     // console.log(data);
     for (var i = 0; i < data.length; i++) {
       var obj = data[i];
-    //  console.log("Name: " + obj.animal_id + ", " + obj.animal_place);
+      //  console.log("Name: " + obj.animal_id + ", " + obj.animal_place);
       c.push(
         <Item
           key={i}
@@ -22,7 +22,7 @@ export default function Content(props) {
         />
       );
     }
-    setChildren(c);
+    setItems(c);
   }, []);
 
   return <div className="content">{items}</div>;

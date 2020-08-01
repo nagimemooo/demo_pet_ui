@@ -1,5 +1,6 @@
 header .auto-container {
   display: flex;
+  justify-content: center;
   align-items: center;
   padding-left: 12px;
   padding-right: 12px;
@@ -40,6 +41,7 @@ header {
 .nav-menu {
   margin: auto;
   vertical-align: center;
+  align-self: center;
   /* position: relative;
   float: right; */
   height: 80px;
@@ -51,6 +53,7 @@ header {
   top: 18px; */
 }
 .nav-link {
+  vertical-align: center;
   position: relative;
   display: inline-block;
   vertical-align: top;
