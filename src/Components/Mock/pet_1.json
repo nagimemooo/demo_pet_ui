@@ -1,0 +1,31 @@
+[
+  {
+    "animal_id": 169917,
+    "animal_subid": "OAAAG1090729004",
+    "animal_area_pkid": 19,
+    "animal_shelter_pkid": 79,
+    "animal_place": "花蓮縣流浪犬中途之家",
+    "animal_kind": "狗",
+    "animal_sex": "F",
+    "animal_bodytype": "MEDIUM",
+    "animal_colour": "棕色",
+    "animal_age": "CHILD",
+    "animal_sterilization": "T",
+    "animal_bacterin": "F",
+    "animal_foundplace": "吉安鄉",
+    "animal_title": "",
+    "animal_status": "OPEN",
+    "animal_remark": "",
+    "animal_caption": "",
+    "animal_opendate": "2020-07-29",
+    "animal_closeddate": "2999-12-31",
+    "animal_update": "2020/08/01",
+    "animal_createtime": "2020/07/29",
+    "shelter_name": "花蓮縣流浪犬中途之家",
+    "album_file": "https://asms.coa.gov.tw/amlapp/upload/pic/8d284f06-5a8e-435e-b06d-04f8e6f6a9e8_org.jpg",
+    "album_update": "",
+    "cDate": "2020/08/01",
+    "shelter_address": "花蓮縣吉安鄉南濱路1段599號",
+    "shelter_tel": "038-421452"
+  }
+]

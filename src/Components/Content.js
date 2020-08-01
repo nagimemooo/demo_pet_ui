@@ -1,17 +1,29 @@
 import "./Content.css";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Item from "./ContentItem.js";
 export default function Content(props) {
-  return (
-    <div className="content">
-      <Item Id="1" Loc="苗栗縣生態保育教育中心(動物收容所)"/>
-      <Item Id="2"/>
-      <Item />
-      <Item />
-      <Item />
-      <Item />
-      <Item />
-      
-    </div>
-  );
+  const [items, setChildren] = useState("");
+  useEffect(() => {
+    const c = [];
+
+    var data = require("./Mock/pets.json");
+    // console.log(data);
+    for (var i = 0; i < data.length; i++) {
+      var obj = data[i];
+    //  console.log("Name: " + obj.animal_id + ", " + obj.animal_place);
+      c.push(
+        <Item
+          key={i}
+          Id={obj.animal_id}
+          Loc={obj.animal_place}
+          Age={obj.animal_age}
+          Sex={obj.animal_sex}
+          Img={obj.album_file}
+        />
+      );
+    }
+    setChildren(c);
+  }, []);
+
+  return <div className="content">{items}</div>;
 }
