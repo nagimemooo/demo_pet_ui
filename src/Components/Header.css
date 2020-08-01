@@ -31,9 +31,6 @@ header {
 
 .brand h1 {
   width: 110px;
-  font-family: "Lato", sans-serif;
-  font-style: normal;
-  font-weight: bold;
   font-size: 18px;
   line-height: 22px;
   color: #fafdff;
@@ -62,14 +59,8 @@ header {
   padding-top: 15px;
   padding-right: 15px;
   padding-bottom: 15px;
-  font-family: Lato;
-  font-style: normal;
-  font-weight: normal;
+
   font-size: 24px;
   line-height: 29px;
   text-decoration: none;
-}
-
-.txt-style {
-  color: #ffffff;
 }

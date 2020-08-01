@@ -1,0 +1,12 @@
+.content {
+  width: 100%;
+  height: 370px;
+
+  position: absolute;
+  left: -1px;
+  top: 450px;
+
+  display: flex;
+
+  background: #52a8c4;
+}
