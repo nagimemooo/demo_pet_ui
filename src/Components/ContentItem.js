@@ -19,13 +19,7 @@ export default function Item(props) {
   function clickHeart(e) {
     setClick(!isClick);
   }
-  useEffect(() => {
-    if (isClick) {
-      setIcon(heartCls);
-    } else {
-      setIcon(heartOCls);
-    }
-  }, []);
+
   return (
     <div className="item">
       <div className="png">
