@@ -1,0 +1,75 @@
+header .auto-container {
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin: auto;
+  /* max-width: 940px; */
+  max-width: 1024px;
+}
+
+header {
+  /* position: absolute;
+  left: 0px;
+  top: 0px; */
+  width: 100%;
+  /* RWD width? */
+  height: 80px;
+  background: #52a8c4;
+  /* padding: 15px;
+ width: 1440px;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 1px 0px 0px;
+  */
+}
+
+.brand {
+  vertical-align: center;
+  width: 108px;
+  height: 17.6px;
+  text-decoration: none;
+}
+
+.brand h1 {
+  width: 110px;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fafdff;
+}
+
+.nav-menu {
+  margin: auto;
+  vertical-align: center;
+  /* position: relative;
+  float: right; */
+  height: 80px;
+  /* 跟設計稿不一樣寫法
+  position: absolute;
+  width: 527px;
+  height: 47.2px;
+  left: 457px;
+  top: 18px; */
+}
+.nav-link {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  margin-left: 25px;
+  padding: 20px;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  text-decoration: none;
+}
+
+.txt-style {
+  color: #ffffff;
+}
