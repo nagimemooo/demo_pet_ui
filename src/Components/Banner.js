@@ -5,12 +5,12 @@ import "./Banner.css";
 export default function Header() {
   return (
     <div className="banner">
-       <div className="png" >
-      <img
-        src="https://picsum.photos/1440/370?image=238"
-        alt=""
-        class="circle-profile"
-      />
+      <div className="png">
+        <img
+          src="https://picsum.photos/1440/370?image=238"
+          alt=""
+          class="circle-profile"
+        />
       </div>
       <div className="banner-front txt-style">
         <h1>尋找流浪寵物...?</h1>

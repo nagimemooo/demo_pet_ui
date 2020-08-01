@@ -1,22 +1,17 @@
-import React from "react";
 import "./Content.css";
-
+import React from "react";
+import Item from "./ContentItem.js";
 export default function Content(props) {
   return (
     <div className="content">
-      <div className="png">
-        {/* <img
-          src="https://picsum.photos/1440/370?image=238"
-          alt=""
-          class="circle-profile"
-        /> */}
-      </div>
-      <div className="desc">
-        <h3>寵物編號:{props.Id}</h3>
-        <h3>收容位置:</h3>
-        <h3>年齡:</h3>
-        <h3>性別:</h3>
-      </div>
+      <Item Id="1" Loc="苗栗縣生態保育教育中心(動物收容所)"/>
+      <Item Id="2"/>
+      <Item />
+      <Item />
+      <Item />
+      <Item />
+      <Item />
+      
     </div>
   );
 }

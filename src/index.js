@@ -1,7 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./styles.css";
 import "./reset.css";
+import "./styles.css";
+
 import Banner from "./Components/Banner";
 import Header from "./Components/Header";
 import Content from "./Components/Content";
@@ -35,7 +36,7 @@ function HelloName(props) {
 
 ReactDOM.render(
   <React.StrictMode>
-    <div className="auto-container">
+    <div className="auto-web">
       <Header />
       <Banner /> {/*註解...*/}
       <Content/>
