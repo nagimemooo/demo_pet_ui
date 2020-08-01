@@ -1,27 +1,31 @@
 import "./Content.css";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 export default function Item(props) {
   const [icon, setIcon] = useState("fa fa-heart-o fa-2x");
   const [isClick, setClick] = useState(false);
+  let heartCls = "fa fa-heart fa-2x";
+  let heartOCls = "fa fa-heart-o fa-2x";
   const getValue = value => {
-    console.log(value);
+    //console.log(value);
   };
   function fullHeart(e) {
-    setIcon("fa fa-heart fa-2x");
+    setIcon(heartCls);
   }
   function emptyHeart(e) {
     if (!isClick) {
-      setIcon("fa fa-heart-o fa-2x");
+      setIcon(heartOCls);
     }
   }
   function clickHeart(e) {
     setClick(!isClick);
-    if (isClick) {
-      setIcon("fa fa-heart fa-2x");
-    } else {
-      setIcon("fa fa-heart-o fa-2x");
-    }
   }
+  useEffect(() => {
+    if (isClick) {
+      setIcon(heartCls);
+    } else {
+      setIcon(heartOCls);
+    }
+  }, []);
   return (
     <div className="item">
       <div className="png">
