@@ -1,17 +1,19 @@
 .content {
-  width: 1024px;
-  margin: 0 auto;
-  max-width: 1024px;
-  padding-left: 12px;
-  padding-right: 12px;
-  display: flex;
+  width: 100%;
   background: rgb(250, 250, 250);
-  padding: 10px;
-  flex-wrap: wrap;
+}
+.content .autoBox {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin: auto;
+  width: 1024px;
+  /* max-width: 940px; */
+  max-width: 1024px;
 }
-
 .content .item {
   width: 230px;
   height: 390px;

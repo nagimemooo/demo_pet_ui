@@ -25,5 +25,7 @@ export default function Content(props) {
     setItems(c);
   }, []);
 
-  return <div className="content">{items}</div>;
+  return <div className="content">
+   <div className="autoBox">
+  {items}</div></div>;
 }

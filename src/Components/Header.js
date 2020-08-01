@@ -6,7 +6,7 @@ export default function Header() {
 
   return (
     <header>
-      <div className="auto-container">
+      <div className="autoBox">
         <a href="/" className="brand">
           <div className="site-name txt-style">
             <i class="fa fa-thumbs-o-up" /> 寵物資訊平台

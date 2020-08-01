@@ -7,6 +7,7 @@ export default function Adopt() {
     <div id="top">锚点1
     <div  className="adopt">
       <div className="Item" />
+<h3>Copyright＠nagimemooo</h3>
       </div>
       </div>
   );
