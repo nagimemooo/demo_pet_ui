@@ -1,9 +1,8 @@
-import React from "react";
-import "./Header.css";
+import React from 'react';
+import './Header.css';
 
 //console報錯 被要求要改<div className
 export default function Header() {
-
   return (
     <header>
       <div className="autoBox">
@@ -17,13 +16,10 @@ export default function Header() {
             關於我們
           </a>
 
-          <a
-            href="/"
-            className="nav-link txt-style"
-          >
+          <a href="/" className="nav-link txt-style">
             我要找寵物
           </a>
-          <a href="/contact" className="nav-link txt-style">
+          <a href="#top" className="nav-link txt-style">
             領養知識
           </a>
           <a href="/contact" className="nav-link txt-style">
