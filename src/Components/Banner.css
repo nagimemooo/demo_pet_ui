@@ -71,6 +71,12 @@
 @keyframes fadeIn {
   from {
     opacity: 0;
+    /* 從下而上 */
+    transform: translateY(10px);
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -o-transform: translateY(10px);
   }
   to {
     opacity: 1;
