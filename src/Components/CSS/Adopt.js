@@ -15,21 +15,23 @@ export const effect3D = css`
 export const adoptStyle = {
   container: css`
     width: 100%;
-    height: 250px;
+    height: 300px;
     position: relative;
     display: flex;
     justify-content: center;
+
     background: #52a8c4;
   `,
   item: css`
     width: 250px;
-    height: 250px;
+    height: 300px;
     // border: 1px red solid;
     position: relative;
   `,
   num: css`
     font-size: 100px;
     position: relative;
+    //TODO RWD?
     left: 70px;
     top: 50px;
     margin: 0 auto;
@@ -48,5 +50,27 @@ export const adoptStyle = {
     font-size: 12px;
     text-align: center;
     padding: 10px;
+  `,
+  button_more: css`
+    margin: 0 auto;
+    background-color: white;
+    color: #52a8c4;
+    display: block;
+    // 要加這個才能置中 Tip
+    border-radius: 5px;
+    border: 3px solid #666;
+  `,
+  imgCenter: css`
+    display: block;
+    padding: 5px;
+  `,
+  autoBox: css`
+    width: 250px;
+    height: 300px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   `,
 };

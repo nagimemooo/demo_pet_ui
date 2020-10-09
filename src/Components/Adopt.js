@@ -1,24 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 /** @jsx jsx */ import { css, jsx } from '@emotion/core'; //不知道為什麼一定要加前述
 import { adoptStyle } from './CSS/Adopt';
-import { cardStyle } from './CSS/rotateCard';
 
-function AdoptItim(props) {
-  return (
-    <div css={adoptStyle.item}>
-      <h1 css={adoptStyle.num}>{props.num}</h1>
-      <div css={adoptStyle.icon}>
-        <i class={props.icon} />
-      </div>
-      <div css={adoptStyle.txt}>{props.txt}</div>
-      <div css={adoptStyle.txt_desc}>{props.children}</div>
-    </div>
-  );
-}
-
+import AdoptItim from './AdoptItem.js';
 //console報錯 被要求要改<div className
 export default function Adopt() {
+  const Flip = () => {
+    setShow(!show);
+    console.log(show);
+  };
+
+  const [show, setShow] = useState(true);
   return (
     <div id="top">
       {/* 锚点1 <a href="#top"></a>*/}
