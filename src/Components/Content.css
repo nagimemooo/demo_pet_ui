@@ -24,10 +24,21 @@
   /*debug use
    background: #52a8c4;
   border: 1px red solid; */
+  /* transform-style: preserve-3d; */
+  /* //关键代码 */
+  /* transition: transform 1s;
+  backface-visibility: hidden; */
 }
 
 .content .item:hover {
-  background: #52a8c4;
+  background: radial-gradient(rgb(82, 168, 196), rgb(177, 229, 246));
+  /* transform: rotateY(180deg); */
+}
+.content .item .back {
+  transform: rotateY(-180deg);
+}
+.content .item .back:hover {
+  transform: rotateY(0deg);
 }
 
 .content .item .png {

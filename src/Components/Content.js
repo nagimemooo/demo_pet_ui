@@ -1,12 +1,12 @@
-import "./Content.css";
-import React, { useState, useEffect } from "react";
-import Item from "./ContentItem.js";
+import './Content.css';
+import React, { useState, useEffect } from 'react';
+import Item from './ContentItem.js';
 export default function Content(props) {
-  const [items, setItems] = useState("");
+  const [items, setItems] = useState('');
   useEffect(() => {
     const c = [];
 
-    var data = require("./Mock/pets.json");
+    var data = require('./Mock/pets.json');
     // console.log(data);
     for (var i = 0; i < data.length; i++) {
       var obj = data[i];
@@ -19,13 +19,16 @@ export default function Content(props) {
           Age={obj.animal_age}
           Sex={obj.animal_sex}
           Img={obj.album_file}
+          animal={obj}
         />
       );
     }
     setItems(c);
   }, []);
 
-  return <div className="content">
-   <div className="autoBox">
-  {items}</div></div>;
+  return (
+    <div className="content">
+      <div className="autoBox">{items}</div>
+    </div>
+  );
 }
