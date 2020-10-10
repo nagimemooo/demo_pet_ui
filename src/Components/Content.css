@@ -1,6 +1,10 @@
 .content {
   width: 100%;
   background: rgb(250, 250, 250);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* Tip 當視窗縮小Item可以排列 RWD */
 }
 .content .autoBox {
   display: flex;
@@ -24,10 +28,6 @@
   /*debug use
    background: #52a8c4;
   border: 1px red solid; */
-  /* transform-style: preserve-3d; */
-  /* //关键代码 */
-  /* transition: transform 1s;
-  backface-visibility: hidden; */
 }
 
 .content .item:hover {

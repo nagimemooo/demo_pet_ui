@@ -72,6 +72,7 @@ export const ContentStyle = {
     height: 300px;
     max-width: 100%;
     display: flex;
+
     align-items: center;
     justify-content: center;
     flex-direction: column;

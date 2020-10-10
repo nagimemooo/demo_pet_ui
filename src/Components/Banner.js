@@ -1,5 +1,5 @@
-import React from "react";
-import "./Banner.css";
+import React from 'react';
+import './Banner.css';
 
 //console報錯 被要求要改<div className
 export default function Header() {
