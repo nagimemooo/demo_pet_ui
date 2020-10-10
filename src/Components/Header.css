@@ -11,17 +11,9 @@ header .autoBox {
 }
 
 header {
-  /* position: absolute;
-  left: 0px;
-  top: 0px; */
   width: 100%;
-  /* TODO RWD width? */
-  height: 80px;
+  height: 100%;
   background: #52a8c4;
-  /* padding: 15px;
- width: 1440px;
-  box-shadow: rgba(0, 0, 0, 0.06) 0px 1px 0px 0px;
-  */
 }
 
 .brand {
@@ -42,7 +34,7 @@ header {
   margin: auto;
   vertical-align: center;
   align-self: center;
-  height: 80px;
+  /* height: 80px; */
 }
 .nav-link {
   vertical-align: center;
@@ -50,10 +42,10 @@ header {
   display: inline-block;
   vertical-align: top;
   text-align: center;
-  margin-left: 25px;
+
   /* border: red solid 1px; //debug*/
   padding: 15px;
-  padding-bottom: 0px;
+  /* padding-bottom: 0px; */
   font-size: 24px;
   line-height: 29px;
   text-decoration: none;
@@ -62,12 +54,16 @@ header {
 a:after {
   content: '';
   position: absolute;
-  bottom: -2px;
+  bottom: 10px;
   left: 50%;
-  /* 讓他一開始置中 */
+  /*讓他一開始置中*/
   width: 0%;
   border-bottom: 2px solid #fff;
   transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
 }
 a:hover:after {
   width: 100%;

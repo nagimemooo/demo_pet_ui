@@ -1,9 +1,11 @@
 import React from 'react';
-import './Adopt.css';
 
+/** @jsx jsx */ import { css, jsx } from '@emotion/core';
+
+import { layoutStyle } from './CSS/layout';
 export default function Fooder() {
   return (
-    <div id="fooder">
+    <div css={layoutStyle.footer}>
       <h3>Copyright＠nagimemooo</h3>
     </div>
   );
