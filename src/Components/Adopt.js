@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 /** @jsx jsx */ import { css, jsx } from '@emotion/core'; //不知道為什麼一定要加前述
 import { adoptStyle } from './CSS/Adopt';
 
+import { Anchor } from './Common/constant';
 import AdoptItim from './AdoptItem.js';
 //console報錯 被要求要改<div className
 export default function Adopt() {
@@ -13,8 +14,8 @@ export default function Adopt() {
 
   const [show, setShow] = useState(true);
   return (
-    <div id="top">
-      {/* 锚点1 <a href="#top"></a>*/}
+    <div id={Anchor.Adopt}>
+      {/* Tip 锚点<a href="#id"></a>*/}
       <div css={adoptStyle.container}>
         <AdoptItim num="01" icon="fa fa-medkit" txt="照顧">
           當毛小孩隨地大小便，，生病時，你都必須照顧他的一切

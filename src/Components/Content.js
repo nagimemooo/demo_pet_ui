@@ -1,6 +1,7 @@
 import './Content.css';
 import React, { useState, useEffect } from 'react';
 import Item from './ContentItem.js';
+import { Anchor } from './Common/constant';
 export default function Content(props) {
   const [items, setItems] = useState('');
   useEffect(() => {
@@ -27,7 +28,7 @@ export default function Content(props) {
   }, []);
 
   return (
-    <div className="content">
+    <div className="content" id={Anchor.Pet}>
       <div className="autoBox">{items}</div>
     </div>
   );
