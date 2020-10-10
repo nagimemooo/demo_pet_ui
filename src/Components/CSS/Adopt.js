@@ -31,9 +31,8 @@ export const adoptStyle = {
   num: css`
     font-size: 100px;
     position: relative;
-    //TODO RWD?
-    left: 70px;
-    top: 50px;
+    text-align: center; //文字置中
+    top: 50px; //離上方距離多遠 代表往下50
     margin: 0 auto;
     color: #ececec;
   `,
