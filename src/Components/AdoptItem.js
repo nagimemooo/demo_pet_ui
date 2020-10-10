@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 
-/** @jsx jsx */ import { css, jsx } from '@emotion/core'; //不知道為什麼一定要加前述
+/** @jsx jsx */ import { css, jsx } from '@emotion/core'; //Tip 使用css屬性要有效果一定要加
 import { adoptStyle } from './CSS/Adopt';
 import { cardStyle } from './CSS/rotateCard';
 
-//Tip:重複的AdoptItim 要往外抽 不能會變成四個item一起動效果喔
+//Tip:重複的function AdoptItim 要往外抽 不能會變成四個item一起動效果喔
 export default function AdoptItim(props) {
   const Flip = () => {
     setShow(!show);

@@ -1,6 +1,9 @@
 /** @jsx jsx */ import { css, jsx } from '@emotion/core';
 
 export const ContentStyle = {
+  hidden: css`
+    display: none;
+  `,
   modalBack: css`
     position: fixed;
     top: 0;
@@ -11,11 +14,14 @@ export const ContentStyle = {
     z-index: 3;
   `,
   modal: css`
-    width: 500px;
-    height: 100％;
     position: fixed;
-    top: 100px;
-    left: 200px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 80%; /*Tip Could be more or less, depending on screen size */
+    height: 100％;
+    margin: 15% auto; /*Tip 15% from the top and centered */
     background-color: #fff;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 0.3rem;
@@ -25,14 +31,14 @@ export const ContentStyle = {
   closeModel: css`
     border-radius: 5px;
     border: 3px solid #666;
-    width: 30px;
-    height: 30px;
+    padding: 5px;
     margin: 0 auto;
     display: block;
     position: absolute;
     right: 0px;
     top: 0px;
     color: red;
+    z-index: 5;
   `,
   icon: css`
     font-size: 60px;
