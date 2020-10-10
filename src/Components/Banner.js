@@ -13,10 +13,10 @@ export default function Header() {
         />
       </div>
       <div className="banner-front txt-style">
-        <h1>尋找流浪寵物...?</h1>
+        <h1>想要養寵物...?</h1>
         <h3>還在一家一家跑收容所？</h3>
-        <h3>想看看毛小孩有多可愛？</h3>
-        <h3>更多療癒圖片都在這裡</h3>
+        <h3>想要線上看看收容所的毛小孩有哪些</h3>
+        <h3>快來一睹牠們的療癒圖片吧~（ ↓↓↓快快搜尋）</h3>
       </div>
     </div>
   );

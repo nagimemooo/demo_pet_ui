@@ -60,6 +60,10 @@
   -webkit-animation: fadeIn ease 1s forwards;
 }
 
+.banner-front h1 {
+  padding-bottom: 30px;
+}
+
 .banner-front h3 {
   font-size: 18px;
   line-height: 150%;

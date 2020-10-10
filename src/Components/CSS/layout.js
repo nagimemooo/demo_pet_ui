@@ -5,5 +5,7 @@ const blueColor1 = '#52a8c4';
 export const layoutStyle = {
   footer: css`
     background-color: ${blueColor1};
+    text-align: center;
+    height: 100px;
   `,
 };
