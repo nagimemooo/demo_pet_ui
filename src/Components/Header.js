@@ -7,7 +7,10 @@ function NavItem(props) {
   return (
     <div className="nav-item">
       <a href={Arch} className=" nav-link txt-style">
-        <i class="fa fas fa-paw" style={{ color: 'black' }} />
+        <i
+          class="fa fas fa-paw"
+          style={{ color: 'black', paddingRight: '5px' }}
+        />
         {props.children}
       </a>
     </div>
@@ -19,7 +22,10 @@ export default function Header() {
     <header>
       <div className="autoBox">
         <a href="/" className="brand">
-          <div className="site-name txt-style">寵物資訊平台</div>
+          <div className="site-name txt-style">
+            尋找浪浪資訊網 <br />
+            Find Your Loving Pets
+          </div>
         </a>
         <nav className="nav-menu">
           <NavItem ArchorId={Anchor.About}>關於我們</NavItem>
