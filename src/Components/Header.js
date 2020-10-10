@@ -1,7 +1,19 @@
 import React from 'react';
 import './Header.css';
 import { Anchor } from './Common/constant';
-//console報錯 被要求要改<div className
+
+function NavItem(props) {
+  const Arch = '#' + props.ArchorId;
+  return (
+    <div className="nav-item">
+      <a href={Arch} className=" nav-link txt-style">
+        <i class="fa fas fa-paw" style={{ color: 'black' }} />
+        {props.children}
+      </a>
+    </div>
+  );
+}
+
 export default function Header() {
   return (
     <header>
@@ -10,24 +22,10 @@ export default function Header() {
           <div className="site-name txt-style">寵物資訊平台</div>
         </a>
         <nav className="nav-menu">
-          <div className="nav-item">
-            <a href={'#' + Anchor.About} className=" nav-link txt-style">
-              <i class="fa fas fa-paw" style={{ color: 'black' }} />
-              關於我們
-            </a>
-          </div>
-          <a href={'#' + Anchor.Pet} className="nav-link txt-style">
-            <i class="fa fas fa-paw" style={{ color: 'black' }} />
-            我要找寵物
-          </a>
-          <a href={'#' + Anchor.Adopt} className="nav-link txt-style">
-            <i class="fa fas fa-paw" style={{ color: 'black' }} />
-            領養知識
-          </a>
-          <a href={'#' + Anchor.Contact} className="nav-link txt-style">
-            <i class="fa fas fa-paw" style={{ color: 'black' }} />
-            聯絡我們
-          </a>
+          <NavItem ArchorId={Anchor.About}>關於我們</NavItem>
+          <NavItem ArchorId={Anchor.Pet}>我要找寵物</NavItem>
+          <NavItem ArchorId={Anchor.Adopt}>領養知識</NavItem>
+          <NavItem ArchorId={Anchor.Contact}>聯絡我們</NavItem>
         </nav>
       </div>
     </header>
