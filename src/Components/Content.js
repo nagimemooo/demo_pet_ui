@@ -12,17 +12,7 @@ export default function Content(props) {
     for (var i = 0; i < data.length; i++) {
       var obj = data[i];
       //  console.log("Name: " + obj.animal_id + ", " + obj.animal_place);
-      c.push(
-        <Item
-          key={i}
-          Id={obj.animal_id}
-          Loc={obj.animal_place}
-          Age={obj.animal_age}
-          Sex={obj.animal_sex}
-          Img={obj.album_file}
-          animal={obj}
-        />
-      );
+      c.push(<Item key={i} animal={obj} />);
     }
     setItems(c);
   }, []);

@@ -88,7 +88,7 @@ export default function Item(props) {
             class="circle-profile"
           />
           <div className="realPng">
-            <img src={props.Img} alt="" class="circle-profile" />
+            <img src={props.animal.album_file} alt="" class="circle-profile" />
           </div>
           <i
             className={icon}
@@ -99,10 +99,10 @@ export default function Item(props) {
           />
         </div>
         <div className="desc txt-style">
-          <h3>寵物編號:{props.Id}</h3>
-          <h3>收容位置:{props.Loc}</h3>
-          <h3>年齡:{props.Age === '' ? '未提供' : props.Age}</h3>
-          <h3>性別:{props.Sex}</h3>
+          <h3>寵物編號:{props.animal.animal_id}</h3>
+          <h3>收容位置:{props.animal.animal_place}</h3>
+          <h3>年齡:{props.animal.animal_age === '' ? '未提供' : props.Age}</h3>
+          <h3>性別:{props.animal.animal_sex}</h3>
           <button class="button" onClick={clickShow}>
             點我看更多
           </button>
